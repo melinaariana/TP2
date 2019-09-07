@@ -1,0 +1,133 @@
+.body {
+    font-family: 'Roboto';
+    margin: 0;
+    max-width: 360px;
+    // background-image: url(./j.png);
+    // background-position: bottom;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: whitesmoke;
+}
+.header {
+    background-image: linear-gradient(to right bottom, #f40080, #f4348e, #f44d9c, #f261a8, #f172b49d);
+    border-radius: 0 0 20px 20px;
+    padding: 0 15px 20px 15px;
+    color: white;
+    box-shadow: 2px 18px 37px -15px rgba(99, 98, 99, 1);
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+// descripción debajo del nombre
+.description-header {
+    font-size: 14px;
+}
+
+// boton +
+.btn-add {
+    width: 50px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+.svg-add {
+    width: 20px;
+    color: #f44d9c;
+}
+
+// inputs
+.add-task {
+    border-radius: 5px 15px 15px 5px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-indent: 10px;
+    font-size: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px white solid;
+}
+// estilado de inputs de titulo y descripción
+#title-task {
+    height: 25px;
+}
+#description-task {
+    height: 60px;
+    font-family: 'Roboto';
+    margin-top: 15px;
+}
+
+// boton enviar card
+.btn-send-task {
+    width: 100%;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+// titulo de lista incompleta y completa
+.tasks-title {
+    display: flex;
+    color: #f44d9c;
+}
+.svg-list {
+    width: 10px;
+}
+
+// Tarea incompleta
+.task-card {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin: 0 30px 20px 0;
+    box-shadow: 2px 18px 37px -15px rgba(99, 98, 99, 1);
+    padding: 15px;
+}
+
+// descripción en la card
+.task-description {
+    font-size: 14px;
+}
+// botones dentro de la card de check y trash
+.btn-task {
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    color: white;
+}
+
+// tarea incompleta
+.incomplete {
+    background-image: linear-gradient(to right, #14b2a1, #36b9aa, #4cbfb2, #5ec6bb, #6fccc3);
+}
+
+// tarea completa
+.complete {
+    background-image: linear-gradient(to right bottom, #6d6b6d86, #8f8f8f8c, #aeaeb188, #c5c5c588, #dfdede86);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin: 0 30px 20px 0;
+    box-shadow: 2px 18px 37px -15px rgba(99, 98, 99, 1);
+    text-decoration: line-through;
+}
+
+// JS para ocultar inputs
+.insert-task {
+    display: none;
+}
+.show {
+    display: block;
+}
